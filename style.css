@@ -1,10 +1,10 @@
-root {
+:root {
     --clr-yellow :#F4D04E;
     --clr-gray-950: #111111;
     --clr-gray-500 : #6B6B6B;
     --clr-white: #FFFFFF;
 
-    --ff: "Figtree", serif;
+    --ff-body: "Figtree", serif;
 
     --fw-heading: 800;
     --fw-body: 500;
@@ -22,4 +22,40 @@ root {
     --space-100: 8px;
     --space-50: 4px;
 
+}
+/* General Styling */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-yellow);
+    font-family: var(--ff-body);
+    font-size: 16px;
+}
+
+h1, ul, li {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Reusable classes */
+.container {
+    background-color: #fff;
+    border: 1px solid var(--clr-gray-950);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 0 #000000;
+    width: 327px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px;
+    margin-bottom: 3em;
+}
+
+/* Custom styling */
+.blog-card__img {
+    border-radius: 5px;
 }
