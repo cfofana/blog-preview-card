@@ -12,6 +12,7 @@
     --fs-heading: 1.5rem;
     --fs-body: 1rem;
     --fs-body-mobile: 0.875rem;
+    --fs-category: 0.875rem;
 
     --lh-heading: 1.5;
     --lh-body: 1.5;
@@ -32,6 +33,9 @@ body {
     background-color: var(--clr-yellow);
     font-family: var(--ff-body);
     font-size: 16px;
+    color: var(--clr-gray-950);
+    line-height: var(--lh-body);
+    letter-spacing: var(--ls);
 }
 
 h1, ul, li {
@@ -58,4 +62,12 @@ img {
 /* Custom styling */
 .blog-card__img {
     border-radius: 5px;
+}
+
+.blog-card__tag {
+    background-color: var(--clr-yellow);
+    width: 35%;
+    padding: var(--space-50) var(--space-150);
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-category);
 }
