@@ -11,12 +11,11 @@
 
     --fs-heading: 1.5rem;
     --fs-body: 1rem;
-    --fs-body-mobile: 0.875rem;
+    /* --fs-body-mobile: 0.875rem; */
     --fs-category: 0.875rem;
 
-    --lh-heading: 1.5;
     --lh-body: 1.5;
-    --ls: 0;
+    --ls-body: 0;
 
     --space-300: 24px;
     --space-150: 12px;
@@ -31,11 +30,12 @@
 
 body {
     background-color: var(--clr-yellow);
-    font-family: var(--ff-body);
-    font-size: 16px;
     color: var(--clr-gray-950);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-body);
+    font-size: 16px;
     line-height: var(--lh-body);
-    letter-spacing: var(--ls);
+    letter-spacing: var(--ls-body);
 }
 
 h1, ul, li {
@@ -53,21 +53,69 @@ img {
     border-radius: 20px;
     box-shadow: 8px 8px 0 0 #000000;
     width: 327px;
-    max-width: 500px;
     margin: 0 auto;
-    padding: 24px;
+    padding: var(--space-300);
     margin-bottom: 3em;
 }
 
-/* Custom styling */
-.blog-card__img {
-    border-radius: 5px;
+.row {
+    display: flex;
 }
 
-.blog-card__tag {
+.col + .col {
+    margin-left: 1em;
+}
+
+/* Custom styling */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    min-height: 100vh;
+}
+
+.blog-card__img {
+    border-radius: 5px;
+    margin-bottom: var(--space-300);
+}
+
+.blog-card__cat {
     background-color: var(--clr-yellow);
-    width: 35%;
+    display: inline-block;
     padding: var(--space-50) var(--space-150);
     font-weight: var(--fw-heading);
     font-size: var(--fs-category);
+    border-radius: 4px;
+}
+
+.blog-card__date {
+    margin: 0;
+}
+
+.blog-card__title {
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-heading);
+    margin: var(--space-300) 0;
+}
+
+.blog-card__title:hover,
+.blog-card__title:focus {
+    color: var(--clr-yellow);
+}
+
+.blog-card__desc {
+    color: var(--clr-gray-500);
+}
+
+.blog-card__name {
+    font-weight: var(--fw-heading);
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        font-size: var(--fs-body-mobile);
+    }
+    .container {
+        width: 384px;
+    }
 }
