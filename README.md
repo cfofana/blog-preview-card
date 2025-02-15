@@ -14,7 +14,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -72,6 +71,6 @@ Spacing, growing proficient at Figma
 ## Author
 
 - Website - [Ceesay Fofana](https://www.ceesayfofana.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/cfofana)
+- Frontend Mentor - [Ceesay Fofana](https://www.frontendmentor.io/profile/cfofana)
 - GitHub - [Ceesay Fofana](https://github.com/cfofana)
 - LinkedIn - [Ceesay Fofana](https://www.linkedin.com/in/ceesay/)
